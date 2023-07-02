@@ -3,6 +3,7 @@
 :root {
     --verde-primario: #0F3D3E;
     --verde-secundario: #14dd90;
+    --verde-background: #2a2a2a; 
 }
 
 html, body {
@@ -21,7 +22,7 @@ html, body {
     width: 300px;
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
-    z-index: auto;
+    z-index: 1;
 }
 
 #header .profile img {
@@ -170,11 +171,33 @@ i.menu-mobile {
         font-size: 1rem;
     }
 }
-
-@media (max-width: 740px) {
+@media (max-width: 975px) {
+    .col-md-8 {
+        font-size: .9rem;
+    }
+    .list-group-item {
+        font-size: .8rem;
+    }
+    div.col-md-4 {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+}
+@media (max-width: 766px) {
     
     section#inicio div#arraste {
         margin: auto auto 0;
+    }
+    #sobre h3 {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .img-fluid {
+        width: 80%;
+        margin: auto;
     }
 }
 
@@ -184,10 +207,33 @@ i.menu-mobile {
 
 *::-webkit-scrollbar-track {
     width: 12px;
-    /* box-shadow: inset 0 0 .1rem #000000; */
-    background-color: #ffff;
+    background-color: var(--verde-background);
 }
 
 *::-webkit-scrollbar-thumb {
     background-color: #000000;
+}
+
+.background-color {
+    background-color: var(--verde-background);
+}
+
+.list-group-item {
+    background-color: var(--verde-background);
+    color: #ffff;
+}
+
+.section-bg {
+    background-color: #000000;
+}
+
+.icon-list {
+    color: var(--verde-secundario);
+    font-size: 1.3rem;
+    padding-right: 0.5rem;
+}
+
+.img-fluid {
+    border-radius: 10%;
+    border-left: 5px solid var(--verde-secundario);
 }

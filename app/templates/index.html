@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Portifólio</title>
 </head>
-<body>
+
+<body class="background-color">
 
     <i class="bi bi-list menu-mobile"></i>
 
     <aside id="header">
         <section class="profile">
-            <img src="../static/img/foto_alex_2.jpeg" class="shadow" alt="Foto Alex">
+            <img src="../static/img/alex.jpeg" class="shadow" alt="Foto Alex">
             <h1>Alex Rocha</h1>
             <div class="social-links mt-4 text-center">
                 <a href="https://www.linkedin.com/in/alex-rocha-23119411b/" target="_blank">
@@ -36,13 +38,11 @@
             <nav id="navbar" class="nav-menu">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house" aria-hidden="true"></i>Início</a>
+                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"
+                                aria-hidden="true"></i>Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#sobre"><i class="bi bi-person" aria-hidden="true"></i>Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-list-check" aria-hidden="true"></i>Habilidades</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="bi bi-file-earmark" aria-hidden="true"></i>Currículo</a>
@@ -78,79 +78,91 @@
         <section id="sobre" class="container mt-5">
             <div class="row w-100">
                 <div class="cow md-12">
-                    <h2 class="pt-3">Sobre</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Dolores temporibus illum dolorum sed dolore, sint doloribus 
-                        illo quaerat eius natus a architecto est. Accusantium 
+                    <h2 class="pt-3 text-white">Sobre</h2>
+                    <p class="text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolores temporibus illum dolorum sed dolore, sint doloribus
+                        illo quaerat eius natus a architecto est. Accusantium
                         similique cumque, alias molestias amet maxime?
                     </p>
                 </div>
             </div>
 
             <div class="row mt-4">
-                <div class="col-md-4">
+                <div class="col-md-4 quadro-img">
                     <img class="img-fluid shadow" src="../static/img/foto_ak.jpeg" alt="Foto Alex">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 text-white">
                     <h3>Título</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Delectus, sed. Possimus, itaque! Autem similique nobis, 
-                        vitae quos voluptas iure eaque esse dolorum? Veniam maiores 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Delectus, sed. Possimus, itaque! Autem similique nobis,
+                        vitae quos voluptas iure eaque esse dolorum? Veniam maiores
                         nostrum aliquam doloremque beatae, tenetur nam.
                     </p>
-                    
-                    <div class="row mt-3 mb-3">
+
+                    <div class="row mt-4 mb-4 colunas">
 
                         <div class="col-md-6">
-                            <ul class="list-group list-group-flush fs-5">
+                            <ul class="list-group list-group-flush fs-6">
                                 <li class="list-group-item">
+                                    <i class="bi bi-calendar3 icon-list"></i>
                                     Nascimento: <span class="fw-lighter">14 de Julho de 1992</span>
                                 </li>
                                 <li class="list-group-item">
-                                    A second item
+                                    <i class="bi bi-geo-alt-fill icon-list"></i>
+                                    Endereço: <span class="fw-lighter">São Paulo - SP</span>
                                 </li>
                                 <li class="list-group-item">
-                                    A third item
-                                </li>
-                                <li class="list-group-item">
-                                    A fourth item
+                                    <i class="bi bi-flag-fill icon-list"></i>
+                                    Nacionalidade: <span class="fw-light">Brasileiro</span>
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <div class="col-md-6">
-                            <ul class="list-group list-group-flush fs-5">
+                            <ul class="list-group list-group-flush fs-6">
                                 <li class="list-group-item">
-                                    An item
+                                    <i class="bi bi-translate icon-list"></i>
+                                    Idiomas: <span class="fw-light">Português, Inglês (Intermediário)</span>
                                 </li>
                                 <li class="list-group-item">
-                                    A second item
+                                    <i class="bi bi-file-person-fill icon-list"></i>
+                                    Experiência: <span class="fw-light">Iniciante</span>
                                 </li>
                                 <li class="list-group-item">
-                                    A third item
-                                </li>
-                                <li class="list-group-item">
-                                    A fourth item
+                                    <i class="bi bi-telephone-fill icon-list"></i>
+                                    Contato: <span class="fw-light">+55 11 94022-8960</span>
                                 </li>
                             </ul>
                         </div>
 
                     </div>
-                    
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quis, ea quasi. Minus, earum modi molestias autem 
-                        exercitationem, voluptatum suscipit tempore a et nesciunt, 
+
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quis, ea quasi. Minus, earum modi molestias autem
+                        exercitationem, voluptatum suscipit tempore a et nesciunt,
                         molestiae perspiciatis tenetur quaerat? Distinctio, sit autem.
                     </p>
-                    
+
                 </div>
             </div>
 
         </section>
+
+        <section class="mt-5 cv section-bg" id="curriculo">
+
+            <div class="container pt-5 pb-5">
+                <h2 class="text-white pt-3 pb-4">Currículo</h2>
+
+            </div>
+
+        </section>
+
+
 
     </main>
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/script.js"></script>
 </body>
+
 </html>
